@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"><title>Tesla Fleet - Connected</title>
+<meta name="viewport" content="width=device-width, initial-scale=1"></head>
+<body style="font-family:sans-serif;max-width:640px;margin:40px auto;padding:0 16px">
+<h2>Tesla authorization received</h2>
+<p>Send this full code back to Instinct (copy everything in the box):</p>
+<pre id="code" style="background:#f4f4f4;padding:16px;word-break:break-all;white-space:pre-wrap">Looking for code...</pre>
+<script>
+var p = new URLSearchParams(location.search);
+var c = p.get('code');
+document.getElementById('code').textContent = c ? c : ('No code found. Full URL: ' + location.href);
+</script>
+</body>
+</html>
